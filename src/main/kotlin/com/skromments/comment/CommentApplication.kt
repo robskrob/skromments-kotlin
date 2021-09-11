@@ -9,3 +9,5 @@ class CommentApplication
 fun main(args: Array<String>) {
 	runApplication<CommentApplication>(*args)
 }
+
+data class Comment(val id: String?, val content: String)
