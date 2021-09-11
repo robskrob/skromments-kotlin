@@ -5,11 +5,10 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.server.ResponseStatusException
 
 @RestController
-@RequestMapping("/api/v1/comments")
 class ApiCommentController() {
 
 
-  @GetMapping
+  @GetMapping("/api/v1/comments")
   fun index(): List<Comment> {
     return listOf(
       Comment("1", "Comment One"),
